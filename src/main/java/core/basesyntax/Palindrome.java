@@ -4,8 +4,7 @@ public class Palindrome {
     public static boolean isPalindrome(String text) {
         text = text.replaceAll("\\W", "");
         StringBuilder strBuilder = new StringBuilder(text);
-        strBuilder.reverse();
-        String invertedText = strBuilder.toString();
+        String invertedText = strBuilder.reverse().toString();
 
         return text.equalsIgnoreCase(invertedText);
 
